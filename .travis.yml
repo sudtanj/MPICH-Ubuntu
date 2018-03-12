@@ -1,0 +1,11 @@
+language: bash
+sudo: required
+before_script:
+    - chmod +x install_mpich.sh
+    - chmod +x compile.sh
+    - ./install_mpich.sh
+script:
+    - ./compile.sh hello 200
+after_success:
+    - ./pushgithub.sh
+
