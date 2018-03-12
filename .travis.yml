@@ -5,8 +5,11 @@ before_script:
     - chmod +x compile.sh
     - chmod +x pushgithub.sh
     - ./install_mpich.sh
+env:
+    global:
+          secure: "VQ7aK4UdEu71sVQo44qqQSlSdmzevLL3OcxWZ8D8CKpwhYV/WcK1x/zc7QWEyk29IPi2/ACEAADoM6EJ/V/BGdMFrkdwKJAXB4yEL8225ZeauFDuJdmWZNDLw19pfuzLbROV67q30BihbmEP18TTq6zfZEPmDRw/S5CBBS+MRRe5L1Uyfb5K50jkkQEpYT9bD4FN3lLKuSeplJ2B1bnwtWG2O/fhLNaG1MNZt7dZdlZIEwK5yGRtjeP+fFBLpZ2cZpzViWNA7DdYXbqhUrtGBkiXhPelq/uHzCupy2ojcP8I/34OkJ87p5yQP+BO/7ZTt0QN3fPQJmv05RNN/4mGXgsb8r7w79mKKfkV230vU8mzwDWNjr9IDmLp6xtvUWC0kLJgddhN8EN1K8WL5aRqpe1KhHqrACjPtaPlmiBw77ePUknBfqI15Z8S9qjM8VPMePCMdPpCw3YkHhv4SceSQ2FoPkq2TLxblqLUe/JL8vuk+NmlMu0ZoEwsFUP269PXaM0Dgt2wCfzd3+VEapL5iZzo+2+xcCs4vYK7hBegQAh8A6owM1TlUa/ZR/hF4n8FDjebvpDXK0bWuxXdQLoyA9pAJAIPA56sTWTeHl+GTP4/F90t2nY+mwsfLJL6pPA6SAjz9s06k9vuj9rD2c6Ni88dTb1qSCFwnpPyQf/18vI="
 script:
-    - ./compile.sh hello 200
+    - ./compile.sh hello 5
 after_success:
     - ./pushgithub.sh
 
