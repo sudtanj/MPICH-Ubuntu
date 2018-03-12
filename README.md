@@ -1,4 +1,6 @@
-# MPICH-Ubuntu
+# MPICH-Ubuntu-with-Travis
+[![Build Status](https://travis-ci.org/sudtanj/MPICH-Ubuntu.svg?branch=master)](https://travis-ci.org/sudtanj/MPICH-Ubuntu)
+
 Running High-Performance Portable MPI on Ubuntu using Travis
 
 ## How to use MPI library with Travis
